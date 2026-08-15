@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-gray-300 font-sans">
+  <!-- Navigation Bar  contains 4 attributs [HOME ABOUT PROJECT CONTACT]-->
+  <nav class="bg-gray-900 shadow-lg shadow-white/10 fixed w-full z-10 border-b border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between">
+      <h1 class="text-xl font-bold text-gray-100 px-1">MyPortfolio</h1>
+      <ul class="flex gap-6">
+        <!-- Anchor links to sections -->
+        <li><a href="#home" class="hover:text-blue-500 transition-colors">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-500 transition-colors">About</a></li>
+        <li><a href="#projects" class="hover:text-blue-500 transition-colors">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-500 transition-colors">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 1. Home Section -->
+  <section id="home" class="min-h-screen flex flex-col items-center justify-center text-center pt-20">
+    <!--⬇️  Name and Quote ⬇️ -->
+    <h2 class="text-4xl font-bold mb-2 text-gray-100">Prathyush R Nair</h2>
+    <p class="text-lg text-gray-300 mb-4 font-medium">Structurally emerging in coding across varies fields </p>
+
+    <!-- Profile Picutre and Styling [using rounded throughout with margin bottom for spacing bw quote and photo] -->
+    <img src="images/profile_pic.jpg" alt="Profile" class="rounded-full mb-4 shadow-lg shadow-white/20" />
+
+    <!-- Catchy quote -->
+    <p class="italic text-gray-400 mb-4">"RANDOM 💡 MOMENTS TO AHHA MOMENT"</p>
+
+    <!-- Download Resume Button -->
+    <button class="
+  bg-blue-600 text-white px-6 py-2 rounded 
+  hover:bg-blue-700 hover:scale-105 
+  shadow-lg hover:shadow-white 
+  transition-all duration-800 ease-in-out
+">
+  Download Resume
+</button>
+  </section>
+
+  <!--  About Me Section -->
+  <section id="about" class="max-w-4xl mx-auto px-4 py-20">
+    <!-- About paragraph -->
+    <h2 class="text-3xl font-semibold mb-6 text-gray-100">About Me</h2>
+    <p class="mb-4 text-gray-300">I'm a passionate developer with interests in web development and UI/UX design. I love building clean, user-friendly interfaces.</p>
+
+    <!-- Key Skills -->
+    <h3 class="text-xl font-medium mb-2 text-gray-200">Skills</h3>
+    <div class="flex flex-row">
+
+    </div>
+    <ul class="list-disc pl-6 mb-4 text-gray-300 flex-col">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Tailwind CSS</li>
+      <li>Python</li>
+      <li>Arduino</li>
+      <li>C programming</li>
+      <li>MY SQL [CREATING/MANAGING DATA BASES ]</li>
+    </ul>
+    <section class="p-8 ">
+      <h3 class="text-xl font-medium mb-2 text-gray-200">Education</h3>
+      <ul class="pl-4  text-gray-300">
+      <li>1. SECONDARY 10th [Computer Science]-<a href="https://www.bhavansvaruna.ac.in/">BHAVANS VARUNA VIDYALAYA</a> </li>
+    </ul>
+    <ul class="pl-4 text-gray-300">
+      <li>2. SENIOR SECONDARY 12th [Computer Science]   <a href="https://www.bhavansvaruna.ac.in/">BHAVANS VARUNA VIDYALAYA</a> </li>
+    </ul>
+    <ul class="pl-4 text-gray-300">
+      <li>3. B.Tech in Computer Science - <a href="https://mgmits.ac.in/">Muthooth Institute Of Technology and Science (2024-2028)</a> </li>
+    </ul>
+
+    </section>
+
+  </section>
+
+  <!-- 3. Projects Section -->
+  <section id="projects" class="bg-gray-950 py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-8 text-gray-100">Projects</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Repeated this block [85-89] copy pastaaa -->
+        <div class="bg-gray-800 p-4 rounded border border-gray-700 hover:scale-105 hover:shadow-lg hover:shadow-white/20 transition-all">
+          <h3 class="text-xl font-bold mb-2 text-gray-100">Fitness Tracker [Gamified with rewards system]</h3>
+          <p class="mb-2 text-gray-300">Displays rewards earned by doing any kind exercises Built with Python KIVY and MYSQL for DATA BASES</p>
+          <a href="https://github.com/prathyushrnair/Fantastic-4" class="text-blue-500 hover:text-blue-400 hover:underline transition-colors">GitHub Repo</a>
+        </div>
+
+        <div class="bg-gray-800 p-4 rounded border border-gray-700 hover:scale-105 hover:shadow-lg hover:shadow-white/20 transition-all">
+          <h3 class="text-xl font-bold mb-2 text-gray-100">A SIMPLE Calculator</h3>
+          <p class="mb-2 text-gray-300">Simple Calculator Web App USING HTML CSS AND JavaScript </p>
+          <a href="https://github.com/prathyushrnair/FOC-assignment-1" class="text-blue-500 hover:text-blue-400 hover:underline transition-colors">GitHub Repo</a>
+        </div>
+
+        <div class="bg-gray-800 p-4 rounded border border-gray-700 hover:scale-105 hover:shadow-lg hover:shadow-white/20 transition-all">
+          <h3 class="text-xl font-bold mb-2 text-gray-100"> Voting System Using Structures in C</h3>
+          <p class="mb-2 text-gray-300">Voting system written in C using structures and dynamic memory allocation</p>
+          <a href="https://github.com/prathyushrnair/Voting-System" class="text-blue-500 hover:text-blue-400 hover:underline transition-colors">GitHub Repo</a>
+        </div>
+        
+        <div class="bg-gray-800 p-4 rounded border border-gray-700 hover:scale-105 hover:shadow-lg hover:shadow-white/20 transition-all">
+          <h3 class="text-xl font-bold mb-2 text-gray-100"> Sending IR Signals through an ESP 32 </h3>
+          <p class="mb-2 text-gray-300">Time-based-ESP-32-remote-using-WIFI in arduino</p>
+          <a href="https://github.com/prathyushrnair/Time-based-ESP-32-remote-using-WIFI" class="text-blue-500 hover:text-blue-400 hover:underline transition-colors">GitHub Repo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Contact Section -->
+  <section id="contact" class="py-20 px-4">
+    <div class="max-w-md mx-auto">
+      <h2 class="text-3xl font-semibold mb-6 text-gray-100">Contact Me</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Name" class="w-full bg-gray-800 border border-gray-700 p-2 rounded text-gray-200 placeholder-gray-500 focus:border-blue-500 focus:outline-none transition-colors" />
+        <input type="email" placeholder="Email" class="w-full bg-gray-800 border border-gray-700 p-2 rounded text-gray-200 placeholder-gray-500 focus:border-blue-500 focus:outline-none transition-colors" />
+        <textarea placeholder="Message" class="w-full bg-gray-800 border border-gray-700 p-2 rounded text-gray-200 placeholder-gray-500 focus:border-blue-500 focus:outline-none transition-colors"></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors shadow-lg shadow-white/20">Send Message</button>
+      </form>
+
+      <!-- Optional: Social Media Icons -->
+      <div class="flex gap-4 mt-6 justify-center">
+        <a href="https://github.com/prathyushrnair" class="text-gray-400 hover:text-blue-500 transition-colors">GitHub</a>
+        <a href="https://www.linkedin.com/in/prathyush-r-nair-8820ab2aa/" class="text-gray-400 hover:text-blue-500 transition-colors">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-center py-4 shadow-inner shadow-white/10 border-t border-gray-800">
+    <p class="text-gray-400">By --> Prathyush R Nair <--</p>
+  </footer>
+</body>
+
+</html>
